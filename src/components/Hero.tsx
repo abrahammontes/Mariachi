@@ -11,18 +11,8 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      <div className="absolute inset-0">
-        <Image
-          src="/images/mariachi (bg).png"
-          alt="Mariachi Nuevo Tecalitlán"
-          fill
-          className="object-cover"
-          style={{ filter: 'brightness(0.4)' }}
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]" />
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]" />
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-4 text-center">
         <motion.div
