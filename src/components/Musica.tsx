@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ExternalLink, Music, Disc, Star } from 'lucide-react';
+import { Play, ExternalLink, Music, Disc, Star } from 'lucide-react';
 
 const albums = [
   {
@@ -31,7 +31,7 @@ const albums = [
 ];
 
 const tracks = [
-  { title: 'A la Mujer', plays: '239K', duration: '3:45' },
+  { title: 'A la Mujer', plays: '239K', duration: '3:45', preview: 'https://youtu.be/L6i1m482Sfs?si=YSEchp7WZNng9csN&t=48' },
   { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12' },
   { title: 'Sones de Veracruz', plays: '62K', duration: '3:58' },
   { title: 'Fantasía Loca', plays: '61K', duration: '3:22' },
@@ -134,6 +134,16 @@ export default function Musica() {
                     </div>
                   </div>
                   <span className="font-cormorant text-white/50">{track.duration}</span>
+                  {track.preview && (
+                    <a
+                      href={track.preview}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full bg-gold/20 text-gold hover:bg-gold hover:text-black transition-all"
+                    >
+                      <Play className="w-5 h-5" />
+                    </a>
+                  )}
                 </motion.div>
               ))}
             </div>
