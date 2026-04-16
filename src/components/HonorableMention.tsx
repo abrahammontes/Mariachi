@@ -18,10 +18,7 @@ export default function HonorableMention() {
 
   return (
     <section ref={ref} className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-gold-dark/20 via-black to-gold-dark/20" />
-      
-
-      <div className="absolute inset-0 bg-black/80" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

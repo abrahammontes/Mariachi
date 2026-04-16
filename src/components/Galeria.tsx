@@ -63,7 +63,7 @@ export default function Galeria() {
 
   return (
     <section id="galeria" className="relative py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black-light via-black to-black" />
+      <div className="absolute inset-0 bg-black/30" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div

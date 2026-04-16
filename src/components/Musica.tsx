@@ -42,17 +42,8 @@ const tracks = [
 export default function Musica() {
   return (
     <section id="musica" className="relative py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black-light" />
+      <div className="absolute inset-0 bg-black/30" />
       
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: 'url(https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/e5/e8/c5e5e895-5ca9-75de-4b43-7d1535216c26/760551015822.jpg/1200x630cw.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

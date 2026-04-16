@@ -50,17 +50,8 @@ export default function Historia() {
 
   return (
     <section id="historia" className="relative py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-black-light" />
+      <div className="absolute inset-0 bg-black/30" />
       
-      <div 
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1513895534631-3b6f2a3b3b3a?w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
