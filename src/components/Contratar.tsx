@@ -54,7 +54,7 @@ export default function Contratar() {
           <h2 className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             <span className="gold-gradient">Contrátanos</span>
           </h2>
-<p className="font-cormorant text-xl text-cream/70 max-w-2xl mx-auto">
+<p className="font-cormorant text-xl text-white/70 max-w-2xl mx-auto">
             Haz de tu evento una celebración inolvidable con la música del Mariachi Nuevo Tecalitlán. 
             60 años de experiencia musical respaldan cada presentación.
           </p>
@@ -82,8 +82,8 @@ export default function Contratar() {
                 >
                   <Check className="w-10 h-10 text-black" />
                 </motion.div>
-                <h3 className="font-playfair text-3xl text-cream mb-4">¡Solicitud Enviada!</h3>
-                <p className="font-cormorant text-xl text-cream/70 mb-6">
+                <h3 className="font-playfair text-3xl text-white mb-4">¡Solicitud Enviada!</h3>
+                <p className="font-cormorant text-xl text-white/70 mb-6">
                   Gracias por tu interés. Nos pondremos en contacto contigo en las próximas 24 horas 
                   para discutir los detalles de tu evento.
                 </p>
@@ -96,24 +96,24 @@ export default function Contratar() {
               <form onSubmit={handleSubmit} className="bg-black-light/60 backdrop-blur-sm rounded-2xl p-8 border border-gold/20">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Nombre completo *</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Nombre completo *</label>
                     <input
                       type="text"
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                       placeholder="Tu nombre"
                     />
                   </div>
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Correo electrónico *</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Correo electrónico *</label>
                     <input
                       type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -121,23 +121,23 @@ export default function Contratar() {
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Teléfono *</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Teléfono *</label>
                     <input
                       type="tel"
                       required
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                       placeholder="+52 33 1234 5678"
                     />
                   </div>
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Tipo de evento *</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Tipo de evento *</label>
                     <select
                       required
                       value={formData.eventType}
                       onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                     >
                       <option value="">Selecciona...</option>
                       {eventTypes.map((type) => (
@@ -149,34 +149,34 @@ export default function Contratar() {
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Fecha del evento *</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Fecha del evento *</label>
                     <input
                       type="date"
                       required
                       value={formData.eventDate}
                       onChange={(e) => setFormData({ ...formData, eventDate: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                     />
                   </div>
                   <div>
-                    <label className="block font-cormorant text-cream/70 mb-2">Ubicación</label>
+                    <label className="block font-cormorant text-white/70 mb-2">Ubicación</label>
                     <input
                       type="text"
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors"
+                      className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors"
                       placeholder="Ciudad, Estado"
                     />
                   </div>
                 </div>
 
                 <div className="mb-8">
-                  <label className="block font-cormorant text-cream/70 mb-2">Mensaje adicional</label>
+                  <label className="block font-cormorant text-white/70 mb-2">Mensaje adicional</label>
                   <textarea
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-cream font-cormorant focus:border-gold focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-black/50 border border-gold/30 rounded-lg text-white font-cormorant focus:border-gold focus:outline-none transition-colors resize-none"
                     placeholder="Cuéntanos más sobre tu evento, número de invitados, preferencias musicales..."
                   />
                 </div>
@@ -225,8 +225,8 @@ export default function Contratar() {
                       <MapPin className="w-5 h-5 text-gold" />
                     </div>
                     <div>
-                      <p className="font-cormorant text-cream/50 text-sm">Ubicación</p>
-                      <p className="font-cormorant text-cream">Guadalajara, Jalisco, México</p>
+                      <p className="font-cormorant text-white/50 text-sm">Ubicación</p>
+                      <p className="font-cormorant text-white">Guadalajara, Jalisco, México</p>
                     </div>
                   </div>
 
@@ -235,8 +235,8 @@ export default function Contratar() {
                       <Phone className="w-5 h-5 text-gold" />
                     </div>
                     <div>
-                      <p className="font-cormorant text-cream/50 text-sm">Teléfono</p>
-                      <p className="font-cormorant text-cream">33 3170 1141</p>
+                      <p className="font-cormorant text-white/50 text-sm">Teléfono</p>
+                      <p className="font-cormorant text-white">33 3170 1141</p>
                     </div>
                   </div>
 
@@ -245,8 +245,8 @@ export default function Contratar() {
                       <Mail className="w-5 h-5 text-gold" />
                     </div>
                     <div>
-                      <p className="font-cormorant text-cream/50 text-sm">Email</p>
-                      <p className="font-cormorant text-cream">mariachi@nuevotecalitlan.com.mx</p>
+                      <p className="font-cormorant text-white/50 text-sm">Email</p>
+                      <p className="font-cormorant text-white">mariachi@nuevotecalitlan.com.mx</p>
                     </div>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ export default function Contratar() {
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <span className="w-2 h-2 rounded-full bg-gold" />
-                      <span className="font-cormorant text-cream/80">{item}</span>
+                      <span className="font-cormorant text-white/80">{item}</span>
                     </li>
                   ))}
                 </ul>

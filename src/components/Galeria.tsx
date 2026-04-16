@@ -77,7 +77,7 @@ export default function Galeria() {
           <h2 className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             <span className="gold-gradient">Galería</span>
           </h2>
-          <p className="font-cormorant text-xl text-cream/70 max-w-2xl mx-auto">
+          <p className="font-cormorant text-xl text-white/70 max-w-2xl mx-auto">
             Instantáneas de seis décadas de pasión, elegancia y música mexicana en su máxima expresión.
           </p>
         </motion.div>
@@ -106,7 +106,7 @@ export default function Galeria() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                 <span className="font-cormorant text-sm text-gold">{image.category}</span>
-                <p className="font-playfair text-cream">{image.alt}</p>
+                <p className="font-playfair text-white">{image.alt}</p>
               </div>
             </motion.div>
           ))}
@@ -122,14 +122,14 @@ export default function Galeria() {
           onClick={closeLightbox}
         >
           <button
-            className="absolute top-6 right-6 p-3 text-cream/60 hover:text-cream transition-colors"
+            className="absolute top-6 right-6 p-3 text-white/60 hover:text-white transition-colors"
             onClick={closeLightbox}
           >
             <X className="w-8 h-8" />
           </button>
           
           <button
-            className="absolute left-4 md:left-8 p-3 text-cream/60 hover:text-gold transition-colors"
+            className="absolute left-4 md:left-8 p-3 text-white/60 hover:text-gold transition-colors"
             onClick={(e) => { e.stopPropagation(); prevImage(); }}
           >
             <ChevronLeft className="w-10 h-10" />
@@ -152,13 +152,13 @@ export default function Galeria() {
               />
             </div>
             <div className="mt-4 text-center">
-              <p className="font-playfair text-xl text-cream">{galleryImages[selectedImage].alt}</p>
+              <p className="font-playfair text-xl text-white">{galleryImages[selectedImage].alt}</p>
               <p className="font-cormorant text-gold">{galleryImages[selectedImage].category}</p>
             </div>
           </motion.div>
           
           <button
-            className="absolute right-4 md:right-8 p-3 text-cream/60 hover:text-gold transition-colors"
+            className="absolute right-4 md:right-8 p-3 text-white/60 hover:text-gold transition-colors"
             onClick={(e) => { e.stopPropagation(); nextImage(); }}
           >
             <ChevronRight className="w-10 h-10" />

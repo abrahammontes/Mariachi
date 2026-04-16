@@ -43,7 +43,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="font-bebas text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-[0.2em] text-cream mb-8"
+          className="font-bebas text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-[0.2em] text-white mb-8"
         >
           NUEVO TECALITLÁN
         </motion.h2>
@@ -54,7 +54,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 1 }}
           className="mb-12"
         >
-          <p className="font-cormorant text-xl sm:text-2xl md:text-3xl text-cream/80 italic max-w-2xl">
+          <p className="font-cormorant text-xl sm:text-2xl md:text-3xl text-white/80 italic max-w-2xl">
             "El mariachi que representa a México con dignidad, orgullo y profunda entrega artística"
           </p>
         </motion.div>
@@ -86,7 +86,7 @@ export default function Hero() {
           transition={{ delay: 1.5 }}
           className="absolute bottom-12 flex flex-col items-center gap-2"
         >
-          <span className="text-cream/50 text-sm tracking-widest">1965 — 2025</span>
+          <span className="text-white/50 text-sm tracking-widest">1965 — 2025</span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}

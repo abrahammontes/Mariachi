@@ -30,7 +30,7 @@ export default function HonorableMention() {
           <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             <span className="gold-gradient">El Mariachi que representa a México</span>
           </h2>
-          <p className="font-cormorant text-xl text-cream/80 max-w-3xl mx-auto">
+          <p className="font-cormorant text-xl text-white/80 max-w-3xl mx-auto">
             Con dignidad, orgullo y profunda entrega artística. Han compartido escenario con 
             Juan Gabriel, Vicente Fernández, Lila Downs, Alejandro Fernández y muchos más.
           </p>
@@ -61,7 +61,7 @@ export default function HonorableMention() {
               >
                 {stat.value}
               </motion.span>
-              <span className="font-cormorant text-cream/70">{stat.label}</span>
+              <span className="font-cormorant text-white/70">{stat.label}</span>
             </motion.div>
           ))}
         </div>
@@ -72,7 +72,7 @@ export default function HonorableMention() {
           transition={{ duration: 1, delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <p className="font-playfair text-xl italic text-cream/90">
+          <p className="font-playfair text-xl italic text-white/90">
             "Porque mientras existan mariachis como Nuevo Tecalitlán, el alma de México seguirá cantando al mundo."
           </p>
         </motion.div>

@@ -64,10 +64,10 @@ export default function Historia() {
           <h2 className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
             <span className="gold-gradient">Una Historia</span>
           </h2>
-          <h3 className="font-bebas text-3xl sm:text-4xl tracking-[0.15em] text-cream/80 mb-6">
+          <h3 className="font-bebas text-3xl sm:text-4xl tracking-[0.15em] text-white/80 mb-6">
             DIGNA DE CONTAR
           </h3>
-          <p className="font-cormorant text-xl text-cream/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-cormorant text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
             Hablar del Mariachi Nuevo Tecalitlán es hablar de tradición, excelencia y pasión por la música mexicana. 
             Seis décadas preservando el alma de México en cada nota.
           </p>
@@ -94,10 +94,10 @@ export default function Historia() {
                   }`}>
                     <span className="font-bebas text-5xl text-gold/30">{milestone.year}</span>
                   </div>
-                  <h3 className="font-playfair text-2xl sm:text-3xl text-cream mb-3">
+                  <h3 className="font-playfair text-2xl sm:text-3xl text-white mb-3">
                     {milestone.title}
                   </h3>
-                  <p className="font-cormorant text-lg text-cream/70 leading-relaxed">
+                  <p className="font-cormorant text-lg text-white/70 leading-relaxed">
                     {milestone.description}
                   </p>
                 </div>
@@ -119,7 +119,7 @@ export default function Historia() {
           viewport={{ once: true }}
           className="mt-20 text-center"
         >
-          <blockquote className="font-playfair text-2xl sm:text-3xl italic text-cream/90 max-w-4xl mx-auto">
+          <blockquote className="font-playfair text-2xl sm:text-3xl italic text-white/90 max-w-4xl mx-auto">
             "Porque mientras existan mariachis como Nuevo Tecalitlán, 
             <span className="text-gold"> el alma de México seguirá cantando al mundo.</span>"
           </blockquote>

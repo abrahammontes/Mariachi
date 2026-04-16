@@ -27,7 +27,7 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="font-cormorant text-lg text-cream/70 leading-relaxed mb-6 max-w-md">
+            <p className="font-cormorant text-lg text-white/70 leading-relaxed mb-6 max-w-md">
               El Mariachi que representa a México con dignidad, orgullo y profunda entrega artística. 
               Seis décadas preservando la esencia de la música mexicana.
             </p>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={item}>
                   <Link
                     href={`#${item.toLowerCase()}`}
-                    className="font-cormorant text-cream/70 hover:text-gold transition-colors"
+                    className="font-cormorant text-white/70 hover:text-gold transition-colors"
                   >
                     {item}
                   </Link>
@@ -88,15 +88,15 @@ export default function Footer() {
           >
             <h4 className="font-bebas text-lg tracking-wider text-gold mb-6">CONTACTO</h4>
             <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-cream/70">
+              <li className="flex items-center gap-3 text-white/70">
                 <MapPin className="w-4 h-4 text-gold" />
                 <span className="font-cormorant">Guadalajara, Jalisco</span>
               </li>
-              <li className="flex items-center gap-3 text-cream/70">
+              <li className="flex items-center gap-3 text-white/70">
                 <Phone className="w-4 h-4 text-gold" />
                 <span className="font-cormorant">33 3170 1141</span>
               </li>
-              <li className="flex items-center gap-3 text-cream/70">
+              <li className="flex items-center gap-3 text-white/70">
                 <Mail className="w-4 h-4 text-gold" />
                 <span className="font-cormorant">mariachi@nuevotecalitlan.com.mx</span>
               </li>
@@ -105,17 +105,17 @@ export default function Footer() {
         </div>
 
         <div className="py-8 border-t border-gold/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-cormorant text-cream/50 text-sm">
+          <p className="font-cormorant text-white/50 text-sm">
             © 2025 Mariachi Nuevo Tecalitlán. Todos los derechos reservados.
           </p>
-          <p className="font-cormorant text-cream/30 text-sm">
+          <p className="font-cormorant text-white/30 text-sm">
             1965 — 2025 • 60 años de tradición y excelencia
           </p>
           <a 
             href="https://espartgraphic.com/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-cream/50 hover:text-gold transition-colors"
+            className="flex items-center gap-2 text-white/50 hover:text-gold transition-colors"
           >
             <span className="font-cormorant text-sm">Diseñado por</span>
             <img 

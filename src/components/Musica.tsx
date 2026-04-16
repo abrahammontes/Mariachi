@@ -56,7 +56,7 @@ export default function Musica() {
           <h2 className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             <span className="gold-gradient">Nuestra Música</span>
           </h2>
-          <p className="font-cormorant text-xl text-cream/70 max-w-2xl mx-auto">
+          <p className="font-cormorant text-xl text-white/70 max-w-2xl mx-auto">
             Más de 60 producciones discográficas. Canciones que han pasado de generación en generación, manteniendo viva la tradición del mariachi.
           </p>
         </motion.div>
@@ -90,7 +90,7 @@ export default function Musica() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <p className="font-playfair text-lg text-cream">{album.title}</p>
+                      <p className="font-playfair text-lg text-white">{album.title}</p>
                       <p className="font-cormorant text-sm text-gold/70">{album.year} • {album.songs} canciones</p>
                     </div>
                   </div>
@@ -121,11 +121,11 @@ export default function Musica() {
                 >
                   <span className="font-bebas text-2xl text-gold/50 w-8">{index + 1}</span>
                   <div className="flex-1">
-                    <p className="font-playfair text-lg text-cream group-hover:text-gold transition-colors">
+                    <p className="font-playfair text-lg text-white group-hover:text-gold transition-colors">
                       {track.title}
                     </p>
                     <div className="flex items-center gap-4 text-sm">
-                      <span className="font-cormorant text-cream/50">{track.plays} reproducciones</span>
+                      <span className="font-cormorant text-white/50">{track.plays} reproducciones</span>
                       {track.plays !== '—' && (
                         <span className="flex items-center gap-1 text-gold">
                           <Star className="w-3 h-3 fill-current" />
@@ -133,7 +133,7 @@ export default function Musica() {
                       )}
                     </div>
                   </div>
-                  <span className="font-cormorant text-cream/50">{track.duration}</span>
+                  <span className="font-cormorant text-white/50">{track.duration}</span>
                   <button className="p-2 rounded-full bg-gold/20 text-gold opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
                     <Play className="w-5 h-5" />
                   </button>
@@ -148,7 +148,7 @@ export default function Musica() {
               viewport={{ once: true }}
               className="mt-10"
             >
-              <p className="font-cormorant text-cream/60 text-center mb-6">Escúchanos en</p>
+              <p className="font-cormorant text-white/60 text-center mb-6">Escúchanos en</p>
               <div className="flex justify-center gap-6">
                 <a
                   href="https://music.apple.com"

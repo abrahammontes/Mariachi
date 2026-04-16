@@ -55,7 +55,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-cormorant text-lg text-cream/80 hover:text-gold transition-colors duration-300 tracking-wide"
+                  className="font-cormorant text-lg text-white/80 hover:text-gold transition-colors duration-300 tracking-wide"
                 >
                   {link.label}
                 </Link>
@@ -64,15 +64,15 @@ export default function Navbar() {
 
             <div className="hidden md:flex items-center gap-4">
               <a href="https://facebook.com/mariachinuevotecalitlan" target="_blank" rel="noopener noreferrer" 
-                 className="text-cream/60 hover:text-gold transition-colors">
+                 className="text-white/60 hover:text-gold transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                 className="text-cream/60 hover:text-gold transition-colors">
+                 className="text-white/60 hover:text-gold transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                 className="text-cream/60 hover:text-gold transition-colors">
+                 className="text-white/60 hover:text-gold transition-colors">
                 <Youtube className="w-5 h-5" />
               </a>
               <Link
@@ -85,7 +85,7 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-cream p-2"
+              className="md:hidden text-white p-2"
             >
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -113,7 +113,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-playfair text-3xl text-cream hover:text-gold transition-colors"
+                    className="font-playfair text-3xl text-white hover:text-gold transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -125,13 +125,13 @@ export default function Navbar() {
                 transition={{ delay: 0.4 }}
                 className="flex gap-6 mt-8"
               >
-                <a href="https://facebook.com/mariachinuevotecalitlan" className="text-cream/60 hover:text-gold">
+                <a href="https://facebook.com/mariachinuevotecalitlan" className="text-white/60 hover:text-gold">
                   <Facebook className="w-6 h-6" />
                 </a>
-                <a href="https://instagram.com" className="text-cream/60 hover:text-gold">
+                <a href="https://instagram.com" className="text-white/60 hover:text-gold">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="https://youtube.com" className="text-cream/60 hover:text-gold">
+                <a href="https://youtube.com" className="text-white/60 hover:text-gold">
                   <Youtube className="w-6 h-6" />
                 </a>
               </motion.div>
