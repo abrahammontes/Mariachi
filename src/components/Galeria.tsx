@@ -7,37 +7,37 @@ import Image from 'next/image';
 
 const galleryImages = [
   {
-    src: '/images/Honor-a-quien-honor-merece-1.jpg',
+    src: '/images/mariachi (1).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-2.jpg',
+    src: '/images/mariachi (2).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-3.jpg',
+    src: '/images/mariachi (3).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-4.jpg',
+    src: '/images/mariachi (4).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-5.jpg',
+    src: '/images/mariachi (5).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-7.jpg',
+    src: '/images/mariachi (6).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: '/images/Honor-a-quien-honor-merece-9.jpg',
+    src: '/images/mariachi (7).png',
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
@@ -145,7 +145,7 @@ export default function Galeria() {
           >
             <div className="relative aspect-video">
               <Image
-                src={galleryImages[selectedImage].src.replace('w=800', 'w=1600')}
+                src={galleryImages[selectedImage].src}
                 alt={galleryImages[selectedImage].alt}
                 fill
                 className="object-contain rounded"
