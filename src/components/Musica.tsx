@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Play, Pause, ExternalLink, Music, Disc, Star } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const albums = [
   {
@@ -42,25 +42,36 @@ const tracks = [
 
 export default function Musica() {
   const [playingTrack, setPlayingTrack] = useState<number | null>(null);
-  const [audioRefs, setAudioRefs] = useState<{ [key: number]: HTMLAudioElement | null }>({});
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const togglePlay = (index: number) => {
-    const audio = audioRefs[index];
-    if (!audio) return;
+    const track = tracks[index];
+    if (!track?.preview) return;
 
+    if (!audioRef.current) {
+      audioRef.current = new Audio();
+    }
+
+    const audio = audioRef.current;
+    
     if (playingTrack === index) {
       audio.pause();
       setPlayingTrack(null);
     } else {
-      Object.values(audioRefs).forEach((a) => a?.pause());
-      audio.play();
+      audio.src = track.preview;
+      audio.play().catch(console.error);
       setPlayingTrack(index);
     }
   };
 
-  const setAudioRef = (index: number, ref: HTMLAudioElement | null) => {
-    setAudioRefs((prev) => ({ ...prev, [index]: ref }));
-  };
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handleEnded = () => setPlayingTrack(null);
+    audio.addEventListener('ended', handleEnded);
+    return () => audio.removeEventListener('ended', handleEnded);
+  }, []);
 
   return (
     <section id="musica" className="relative py-32 overflow-hidden">
@@ -142,11 +153,6 @@ export default function Musica() {
                   className="group flex items-center gap-4 p-4 bg-black-light/50 rounded-lg border border-transparent hover:border-gold/30 transition-all duration-300 cursor-pointer"
                   onClick={() => togglePlay(index)}
                 >
-                  <audio
-                    ref={(ref) => setAudioRef(index, ref)}
-                    src={track.preview}
-                    onEnded={() => setPlayingTrack(null)}
-                  />
                   <span className="font-bebas text-2xl text-gold w-8">{index + 1}</span>
                   <div className="flex-1">
                     <p className="font-playfair text-lg text-white group-hover:text-gold transition-colors">
