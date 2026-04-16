@@ -91,7 +91,7 @@ export default function Hero() {
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
           >
-            <ChevronDown className="w-8 h-8 text-gold/60" />
+            <ChevronDown className="w-8 h-8 text-gold" />
           </motion.div>
         </motion.div>
       </div>

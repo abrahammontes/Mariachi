@@ -91,7 +91,7 @@ export default function Musica() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-4">
                       <p className="font-playfair text-lg text-white">{album.title}</p>
-                      <p className="font-cormorant text-sm text-gold/70">{album.year} • {album.songs} canciones</p>
+                      <p className="font-cormorant text-sm text-gold">{album.year} • {album.songs} canciones</p>
                     </div>
                   </div>
                 </motion.div>
@@ -119,7 +119,7 @@ export default function Musica() {
                   viewport={{ once: true }}
                   className="group flex items-center gap-4 p-4 bg-black-light/50 rounded-lg border border-transparent hover:border-gold/30 transition-all duration-300 cursor-pointer"
                 >
-                  <span className="font-bebas text-2xl text-gold/50 w-8">{index + 1}</span>
+                  <span className="font-bebas text-2xl text-gold w-8">{index + 1}</span>
                   <div className="flex-1">
                     <p className="font-playfair text-lg text-white group-hover:text-gold transition-colors">
                       {track.title}

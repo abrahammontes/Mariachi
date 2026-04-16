@@ -92,7 +92,7 @@ export default function Historia() {
                   <div className={`inline-flex items-center gap-2 mb-4 ${
                     index % 2 === 0 ? 'md:justify-end' : 'md:justify-start'
                   }`}>
-                    <span className="font-bebas text-5xl text-gold/30">{milestone.year}</span>
+                    <span className="font-bebas text-5xl text-gold">{milestone.year}</span>
                   </div>
                   <h3 className="font-playfair text-2xl sm:text-3xl text-white mb-3">
                     {milestone.title}
