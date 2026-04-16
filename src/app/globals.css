@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --gold: #c9a227;
-  --gold-light: #e8d48a;
-  --gold-dark: #8b7019;
+  --gold: #FFD700;
+  --gold-light: #FFEB3B;
+  --gold-dark: #FFC107;
   --red: #8b0000;
   --red-light: #a52a2a;
-  --cream: #f5f0e1;
+  --cream: #ffffff;
   --black: #0a0a0a;
   --black-light: #1a1a1a;
   --black-lighter: #2a2a2a;
