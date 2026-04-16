@@ -36,11 +36,6 @@ const galleryImages = [
     alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
-  {
-    src: '/images/Honor-q-quien-honor-merece-9.jpg',
-    alt: 'Mariachi Nuevo Tecalitlán',
-    category: 'Presentaciones',
-  },
 ];
 
 export default function Galeria() {
