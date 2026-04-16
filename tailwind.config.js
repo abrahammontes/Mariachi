@@ -25,9 +25,9 @@ module.exports = {
         },
       },
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
-        cormorant: ['Cormorant Garamond', 'serif'],
-        bebas: ['Bebas Neue', 'sans-serif'],
+        playfair: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        cormorant: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        bebas: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
