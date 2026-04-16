@@ -12,14 +12,13 @@ export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
-        <div 
-          className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black"
-          style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=80)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'brightness(0.4)',
-          }}
+        <Image
+          src="/images/carat_mariachi.jpg"
+          alt="Mariachi Nuevo Tecalitlán"
+          fill
+          className="object-cover"
+          style={{ filter: 'brightness(0.4)' }}
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)]" />
