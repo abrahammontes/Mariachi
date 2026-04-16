@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Play, Pause, ExternalLink, Music, Disc, Star } from 'lucide-react';
-import { useState, useRef, useEffect } from 'react';
+import { ExternalLink, Music, Disc, Star } from 'lucide-react';
 
 const albums = [
   {
@@ -32,47 +31,15 @@ const albums = [
 ];
 
 const tracks = [
-  { title: 'A la Mujer', plays: '239K', duration: '3:45', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-  { title: 'Fantasía Loca', plays: '61K', duration: '3:22', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-  { title: 'Cielito Lindo', plays: '—', duration: '2:55', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-  { title: 'La Martina', plays: '—', duration: '4:30', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
+  { title: 'A la Mujer', plays: '239K', duration: '3:45' },
+  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12' },
+  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58' },
+  { title: 'Fantasía Loca', plays: '61K', duration: '3:22' },
+  { title: 'Cielito Lindo', plays: '—', duration: '2:55' },
+  { title: 'La Martina', plays: '—', duration: '4:30' },
 ];
 
 export default function Musica() {
-  const [playingTrack, setPlayingTrack] = useState<number | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-
-  const togglePlay = (index: number) => {
-    const track = tracks[index];
-    if (!track?.preview) return;
-
-    if (!audioRef.current) {
-      audioRef.current = new Audio();
-    }
-
-    const audio = audioRef.current;
-    
-    if (playingTrack === index) {
-      audio.pause();
-      setPlayingTrack(null);
-    } else {
-      audio.src = track.preview;
-      audio.play().catch(console.error);
-      setPlayingTrack(index);
-    }
-  };
-
-  useEffect(() => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    const handleEnded = () => setPlayingTrack(null);
-    audio.addEventListener('ended', handleEnded);
-    return () => audio.removeEventListener('ended', handleEnded);
-  }, []);
-
   return (
     <section id="musica" className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 bg-black/30" />
@@ -150,12 +117,11 @@ export default function Musica() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="group flex items-center gap-4 p-4 bg-black-light/50 rounded-lg border border-transparent hover:border-gold/30 transition-all duration-300 cursor-pointer"
-                  onClick={() => togglePlay(index)}
+                  className="flex items-center gap-4 p-4 bg-black-light/50 rounded-lg border border-transparent hover:border-gold/30 transition-all duration-300"
                 >
                   <span className="font-bebas text-2xl text-gold w-8">{index + 1}</span>
                   <div className="flex-1">
-                    <p className="font-playfair text-lg text-white group-hover:text-gold transition-colors">
+                    <p className="font-playfair text-lg text-white">
                       {track.title}
                     </p>
                     <div className="flex items-center gap-4 text-sm">
@@ -168,9 +134,6 @@ export default function Musica() {
                     </div>
                   </div>
                   <span className="font-cormorant text-white/50">{track.duration}</span>
-                  <button className="p-2 rounded-full bg-gold/20 text-gold opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
-                    {playingTrack === index ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
-                  </button>
                 </motion.div>
               ))}
             </div>
@@ -211,6 +174,28 @@ export default function Musica() {
                   <span className="font-bebas text-lg">YouTube</span>
                   <ExternalLink className="w-4 h-4 text-gold" />
                 </a>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="mt-12"
+            >
+              <h3 className="font-bebas text-2xl tracking-wider text-gold mb-6 text-center">
+                ESCUCHAR EN DEEZER
+              </h3>
+              <div className="w-full overflow-hidden rounded-lg">
+                <iframe
+                  title="Deezer Player"
+                  frameBorder="0"
+                  width="100%"
+                  height="300"
+                  src="https://widget.deezer.com/widget/dark/artist/2336683/horizontal/cover=no/tracklist=no/height=300"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                ></iframe>
               </div>
             </motion.div>
           </motion.div>
