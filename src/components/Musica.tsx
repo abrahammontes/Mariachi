@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Play, Pause, ExternalLink, Music, Disc, Star } from 'lucide-react';
+import { useState } from 'react';
 
 const albums = [
   {
@@ -31,15 +32,36 @@ const albums = [
 ];
 
 const tracks = [
-  { title: 'A la Mujer', plays: '239K', duration: '3:45' },
-  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12' },
-  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58' },
-  { title: 'Fantasía Loca', plays: '61K', duration: '3:22' },
-  { title: 'Cielito Lindo', plays: '—', duration: '2:55' },
-  { title: 'La Martina', plays: '—', duration: '4:30' },
+  { title: 'A la Mujer', plays: '239K', duration: '3:45', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+  { title: 'Fantasía Loca', plays: '61K', duration: '3:22', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+  { title: 'Cielito Lindo', plays: '—', duration: '2:55', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
+  { title: 'La Martina', plays: '—', duration: '4:30', preview: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3' },
 ];
 
 export default function Musica() {
+  const [playingTrack, setPlayingTrack] = useState<number | null>(null);
+  const [audioRefs, setAudioRefs] = useState<{ [key: number]: HTMLAudioElement | null }>({});
+
+  const togglePlay = (index: number) => {
+    const audio = audioRefs[index];
+    if (!audio) return;
+
+    if (playingTrack === index) {
+      audio.pause();
+      setPlayingTrack(null);
+    } else {
+      Object.values(audioRefs).forEach((a) => a?.pause());
+      audio.play();
+      setPlayingTrack(index);
+    }
+  };
+
+  const setAudioRef = (index: number, ref: HTMLAudioElement | null) => {
+    setAudioRefs((prev) => ({ ...prev, [index]: ref }));
+  };
+
   return (
     <section id="musica" className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 bg-black/30" />
@@ -118,7 +140,13 @@ export default function Musica() {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   viewport={{ once: true }}
                   className="group flex items-center gap-4 p-4 bg-black-light/50 rounded-lg border border-transparent hover:border-gold/30 transition-all duration-300 cursor-pointer"
+                  onClick={() => togglePlay(index)}
                 >
+                  <audio
+                    ref={(ref) => setAudioRef(index, ref)}
+                    src={track.preview}
+                    onEnded={() => setPlayingTrack(null)}
+                  />
                   <span className="font-bebas text-2xl text-gold w-8">{index + 1}</span>
                   <div className="flex-1">
                     <p className="font-playfair text-lg text-white group-hover:text-gold transition-colors">
@@ -135,7 +163,7 @@ export default function Musica() {
                   </div>
                   <span className="font-cormorant text-white/50">{track.duration}</span>
                   <button className="p-2 rounded-full bg-gold/20 text-gold opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
-                    <Play className="w-5 h-5" />
+                    {playingTrack === index ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
                   </button>
                 </motion.div>
               ))}
