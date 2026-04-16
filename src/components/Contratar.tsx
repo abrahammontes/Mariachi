@@ -246,9 +246,7 @@ export default function Contratar() {
                     </div>
                     <div>
                       <p className="font-cormorant text-cream/50 text-sm">Teléfono</p>
-                      <p className="font-cormorant text-cream">+52 33 1234 5678</p>
-                      <p className="font-cormorant text-cream/50 text-sm mt-2">USA Contact</p>
-                      <p className="font-cormorant text-cream">(210) 919-8943</p>
+                      <p className="font-cormorant text-cream">33 3170 1141</p>
                     </div>
                   </div>
 
@@ -258,7 +256,7 @@ export default function Contratar() {
                     </div>
                     <div>
                       <p className="font-cormorant text-cream/50 text-sm">Email</p>
-                      <p className="font-cormorant text-cream">contacto@nuevotecalitlan.com</p>
+                      <p className="font-cormorant text-cream">mariachi@nuevotecalitlan.com.mx</p>
                     </div>
                   </div>
                 </div>

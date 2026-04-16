@@ -41,7 +41,7 @@ export default function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/mariachinuevotecalitlan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold/70 hover:bg-gold hover:text-black transition-all duration-300"
@@ -49,7 +49,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://youtube.com/@mariachinuevotecalitlan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold/70 hover:bg-gold hover:text-black transition-all duration-300"
@@ -94,11 +94,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-cream/70">
                 <Phone className="w-4 h-4 text-gold" />
-                <span className="font-cormorant">+52 33 1234 5678</span>
+                <span className="font-cormorant">33 3170 1141</span>
               </li>
               <li className="flex items-center gap-3 text-cream/70">
                 <Mail className="w-4 h-4 text-gold" />
-                <span className="font-cormorant">contacto@nuevotecalitlan.com</span>
+                <span className="font-cormorant">mariachi@nuevotecalitlan.com.mx</span>
               </li>
             </ul>
           </motion.div>
