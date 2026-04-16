@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Play, ExternalLink, Music, Disc, Star } from 'lucide-react';
+import { ExternalLink, Music, Disc, Star } from 'lucide-react';
 
 const albums = [
   {
@@ -31,12 +31,12 @@ const albums = [
 ];
 
 const tracks = [
-  { title: 'A la Mujer', plays: '239K', duration: '3:45', preview: 'https://widget.deezer.com/widget/auto/track/1850689117' },
-  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12', preview: null },
-  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58', preview: null },
-  { title: 'Fantasía Loca', plays: '61K', duration: '3:22', preview: null },
-  { title: 'Cielito Lindo', plays: '—', duration: '2:55', preview: null },
-  { title: 'La Martina', plays: '—', duration: '4:30', preview: null },
+  { title: 'A la Mujer', plays: '239K', duration: '3:45' },
+  { title: 'El Nuevo Huapango', plays: '73K', duration: '4:12' },
+  { title: 'Sones de Veracruz', plays: '62K', duration: '3:58' },
+  { title: 'Fantasía Loca', plays: '61K', duration: '3:22' },
+  { title: 'Cielito Lindo', plays: '—', duration: '2:55' },
+  { title: 'La Martina', plays: '—', duration: '4:30' },
 ];
 
 export default function Musica() {
@@ -134,16 +134,6 @@ export default function Musica() {
                     </div>
                   </div>
                   <span className="font-cormorant text-white/50">{track.duration}</span>
-                  {track.preview && (
-                    <a
-                      href={track.preview}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-gold/20 text-gold hover:bg-gold hover:text-black transition-all"
-                    >
-                      <Play className="w-5 h-5" />
-                    </a>
-                  )}
                 </motion.div>
               ))}
             </div>
