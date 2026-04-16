@@ -13,7 +13,7 @@ export default function Hero() {
     <section className="relative h-screen w-full overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/carat_mariachi.jpg"
+          src="/images/mariachi (bg).png"
           alt="Mariachi Nuevo Tecalitlán"
           fill
           className="object-cover"
