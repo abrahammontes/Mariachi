@@ -7,25 +7,25 @@ const albums = [
   {
     title: 'Yo Soy de Tecalitlán',
     year: '2025',
-    cover: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&q=80',
+    cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c7/1f/0b/c71f0b50-4a78-5f58-59ab-5175ee09d7b4/0.jpg/486x486bb.png',
     songs: 10,
   },
   {
-    title: 'La Negra',
-    year: '2013',
-    cover: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80',
+    title: 'La Mujer Más Especial',
+    year: '2021',
+    cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/64/ce/05/64ce05e9-ffaa-107b-e2b4-69393d4ef16b/7500682162957.png/486x486bb.png',
     songs: 12,
   },
   {
-    title: 'Viva Jalisco',
-    year: '2010',
-    cover: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=400&q=80',
+    title: 'México de Mis Amores',
+    year: '2020',
+    cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e8/bf/f7/e8bff7c9-e190-9523-3b91-ce8e54481f39/600093083425.png/486x486bb.png',
     songs: 10,
   },
   {
-    title: 'Clásicos del Mariachi',
-    year: '2008',
-    cover: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=400&q=80',
+    title: 'Serenata Mexicana',
+    year: '2019',
+    cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/7d/a0/2e/7da02eff-e1a6-9e65-23ec-eaf3d9e25ed3/7450001718702.png/486x486bb.png',
     songs: 15,
   },
 ];
@@ -47,7 +47,7 @@ export default function Musica() {
       <div 
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1513895534631-3b6f2a3b3b3a?w=1920)',
+          backgroundImage: 'url(https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/e5/e8/c5e5e895-5ca9-75de-4b43-7d1535216c26/760551015822.jpg/1200x630cw.png)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
