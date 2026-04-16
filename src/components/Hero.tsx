@@ -21,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="mb-8"
         >
-          <div className="relative w-48 h-48 mx-auto mb-6">
+          <div className="relative w-144 h-144 mx-auto mb-6">
             <Image
               src="/images/logo.png"
               alt="Mariachi Nuevo Tecalitlán"

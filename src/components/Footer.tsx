@@ -18,7 +18,7 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-16 h-16">
+              <div className="relative w-48 h-48">
                 <Image
                   src="/images/logo.png"
                   alt="Mariachi Nuevo Tecalitlán"
