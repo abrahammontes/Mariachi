@@ -111,6 +111,19 @@ export default function Footer() {
           <p className="font-cormorant text-cream/30 text-sm">
             1965 — 2025 • 60 años de tradición y excelencia
           </p>
+          <a 
+            href="https://espartgraphic.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-cream/50 hover:text-gold transition-colors"
+          >
+            <span className="font-cormorant text-sm">Diseñado por</span>
+            <img 
+              src="https://espartgraphic.com/wp-content/uploads/2026/02/espart-graphic-studio-logo.svg" 
+              alt="Espart Graphic Studio" 
+              className="h-6 w-auto invert"
+            />
+          </a>
         </div>
       </div>
 
