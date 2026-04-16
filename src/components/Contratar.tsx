@@ -54,9 +54,9 @@ export default function Contratar() {
           <h2 className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
             <span className="gold-gradient">Contrátanos</span>
           </h2>
-          <p className="font-cormorant text-xl text-cream/70 max-w-2xl mx-auto">
+<p className="font-cormorant text-xl text-cream/70 max-w-2xl mx-auto">
             Haz de tu evento una celebración inolvidable con la música del Mariachi Nuevo Tecalitlán. 
-            60 años de experiencia为您带来最美的墨西哥音乐。
+            60 años de experiencia musical respaldan cada presentación.
           </p>
         </motion.div>
 
