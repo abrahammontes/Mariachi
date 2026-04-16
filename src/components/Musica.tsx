@@ -146,9 +146,9 @@ export default function Musica() {
               className="mt-10"
             >
               <p className="font-cormorant text-white/60 text-center mb-6">Escúchanos en</p>
-              <div className="flex justify-center gap-6">
+              <div className="flex flex-wrap justify-center gap-6">
                 <a
-                  href="https://music.apple.com"
+                  href="https://music.apple.com/mx/artist/mariachi-nuevo-tecalitlan/98529455"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-black-lighter rounded-lg border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300"
@@ -157,7 +157,7 @@ export default function Musica() {
                   <ExternalLink className="w-4 h-4 text-gold" />
                 </a>
                 <a
-                  href="https://spotify.com"
+                  href="https://open.spotify.com/artist/4pO7gN3X8Qx8QhXZKxY6T4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-black-lighter rounded-lg border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300"
@@ -166,7 +166,7 @@ export default function Musica() {
                   <ExternalLink className="w-4 h-4 text-gold" />
                 </a>
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/@MariachiNuevoTecalitlan"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-black-lighter rounded-lg border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300"
@@ -174,28 +174,15 @@ export default function Musica() {
                   <span className="font-bebas text-lg">YouTube</span>
                   <ExternalLink className="w-4 h-4 text-gold" />
                 </a>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="mt-12"
-            >
-              <h3 className="font-bebas text-2xl tracking-wider text-gold mb-6 text-center">
-                ESCUCHAR EN DEEZER
-              </h3>
-              <div className="w-full rounded-lg overflow-hidden">
-                <iframe
-                  title="Deezer"
-                  src="https://www.deezer.com/es/artist/304363?embed=1"
-                  width="100%"
-                  height="400"
-                  style={{ borderRadius: '12px', border: 'none' }}
-                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                ></iframe>
+                <a
+                  href="https://www.deezer.com/mx/artist/304363"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 bg-black-lighter rounded-lg border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300"
+                >
+                  <span className="font-bebas text-lg">Deezer</span>
+                  <ExternalLink className="w-4 h-4 text-gold" />
+                </a>
               </div>
             </motion.div>
           </motion.div>
