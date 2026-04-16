@@ -7,11 +7,6 @@ import Image from 'next/image';
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80',
-    alt: 'Mariachi en presentación',
-    category: 'Presentaciones',
-  },
-  {
     src: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
     alt: 'Violinista profesional',
     category: 'Músicos',

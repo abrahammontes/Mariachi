@@ -20,14 +20,7 @@ export default function HonorableMention() {
     <section ref={ref} className="relative py-24 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-gold-dark/20 via-black to-gold-dark/20" />
       
-      <div 
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+
       <div className="absolute inset-0 bg-black/80" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

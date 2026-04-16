@@ -42,14 +42,7 @@ export default function Contratar() {
     <section id="contratar" className="relative py-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black-light via-black to-black" />
       
-      <div 
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
