@@ -187,13 +187,13 @@ export default function Musica() {
               <h3 className="font-bebas text-2xl tracking-wider text-gold mb-6 text-center">
                 ESCUCHAR EN DEEZER
               </h3>
-              <div className="w-full overflow-hidden rounded-lg">
+              <div className="w-full rounded-lg overflow-hidden">
                 <iframe
-                  title="Deezer Player"
-                  frameBorder="0"
+                  title="Deezer"
+                  src="https://www.deezer.com/es/artist/304363?embed=1"
                   width="100%"
-                  height="350"
-                  src="https://widget.deezer.com/widget/dark/artist/304363/horizontal/cover=no/tracklist=yes/height=350"
+                  height="400"
+                  style={{ borderRadius: '12px', border: 'none' }}
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 ></iframe>
               </div>
