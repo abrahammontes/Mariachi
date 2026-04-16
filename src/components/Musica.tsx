@@ -175,7 +175,7 @@ export default function Musica() {
                   <ExternalLink className="w-4 h-4 text-gold" />
                 </a>
                 <a
-                  href="https://link.deezer.com/s/330Mg7rQO4HuiDHjs1oOa"
+                  href="https://www.deezer.com/mx/artist/304363"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-6 py-3 bg-black-lighter rounded-lg border border-gold/30 hover:border-gold hover:bg-gold/10 transition-all duration-300"
