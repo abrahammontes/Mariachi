@@ -7,38 +7,38 @@ import Image from 'next/image';
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80',
-    alt: 'Violinista profesional',
-    category: 'Músicos',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800&q=80',
-    alt: 'Guitarra mexicana',
-    category: 'Instrumentos',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80',
-    alt: 'Concierto en vivo',
+    src: '/images/Honor-a-quien-honor-merece-1.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
   {
-    src: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80',
-    alt: 'Trompeta',
-    category: 'Instrumentos',
+    src: '/images/Honor-a-quien-honor-merece-2.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
+    category: 'Presentaciones',
   },
   {
-    src: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80',
-    alt: 'Equipo mariachi',
-    category: 'Detras de cámaras',
+    src: '/images/Honor-a-quien-honor-merece-3.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
+    category: 'Presentaciones',
   },
   {
-    src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80',
-    alt: 'Charro elegante',
-    category: 'Trajes',
+    src: '/images/Honor-a-quien-honor-merece-4.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
+    category: 'Presentaciones',
   },
   {
-    src: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&q=80',
-    alt: 'Noche de mariachi',
+    src: '/images/Honor-a-quien-honor-merece-5.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
+    category: 'Presentaciones',
+  },
+  {
+    src: '/images/Honor-a-quien-honor-merece-7.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
+    category: 'Presentaciones',
+  },
+  {
+    src: '/images/Honor-q-quien-honor-merece-9.jpg',
+    alt: 'Mariachi Nuevo Tecalitlán',
     category: 'Presentaciones',
   },
 ];
