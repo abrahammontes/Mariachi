@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ChevronDown, Play, Volume2, VolumeX } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   const [isMuted, setIsMuted] = useState(true);
@@ -29,11 +30,16 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="mb-6"
+          className="mb-8"
         >
-          <span className="inline-block px-4 py-1 bg-gold/20 border border-gold/40 text-gold text-sm tracking-[0.3em] font-cormorant">
-            Guadalajara, Jalisco • México
-          </span>
+          <div className="relative w-48 h-48 mx-auto mb-6">
+            <Image
+              src="/images/logo.png"
+              alt="Mariachi Nuevo Tecalitlán"
+              fill
+              className="object-contain drop-shadow-2xl"
+            />
+          </div>
         </motion.div>
 
         <motion.h1

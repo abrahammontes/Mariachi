@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Youtube, Music, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -17,12 +18,13 @@ export default function Footer() {
             className="md:col-span-2"
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
-                <Music className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <span className="font-bebas text-2xl tracking-wider text-gold">NUEVO TECALITLÁN</span>
-                <span className="block text-xs tracking-[0.3em] text-cream/50 font-cormorant">MARIACHI desde 1965</span>
+              <div className="relative w-16 h-16">
+                <Image
+                  src="/images/logo.png"
+                  alt="Mariachi Nuevo Tecalitlán"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
             <p className="font-cormorant text-lg text-cream/70 leading-relaxed mb-6 max-w-md">

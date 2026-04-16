@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Facebook, Instagram, Youtube, Music } from 'lucide-react';
+import { Menu, X, Facebook, Instagram, Youtube } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '#historia', label: 'Historia' },
@@ -39,12 +40,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
-                <Music className="w-5 h-5 text-black" />
-              </div>
-              <div className="hidden sm:block">
-                <span className="font-bebas text-xl tracking-wider text-gold">NUEVO TECALITLÁN</span>
-                <span className="block text-[10px] tracking-[0.3em] text-cream/60 font-cormorant">MARIACHI 1965</span>
+              <div className="relative w-12 h-12">
+                <Image
+                  src="/images/logo.png"
+                  alt="Mariachi Nuevo Tecalitlán"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </Link>
 
