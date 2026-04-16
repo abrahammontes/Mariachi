@@ -193,7 +193,7 @@ export default function Musica() {
                   frameBorder="0"
                   width="100%"
                   height="350"
-                  src="https://widget.deezer.com/widget/dark/artist/2336683/horizontal/cover=no/tracklist=yes/height=350"
+                  src="https://widget.deezer.com/widget/dark/artist/304363/horizontal/cover=no/tracklist=yes/height=350"
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 ></iframe>
               </div>
