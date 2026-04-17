@@ -121,7 +121,7 @@ export default function Footer() {
             <img 
               src="https://espartgraphic.com/wp-content/uploads/2026/02/espart-graphic-studio-logo.svg" 
               alt="Espart Graphic Studio" 
-              className="h-6 w-auto invert"
+              className="h-6 w-auto brightness-0 invert"
             />
           </a>
         </div>
